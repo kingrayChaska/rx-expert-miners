@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useAuth } from "@/contexts/AuthContext";
 import { useLanguage } from "@/contexts/LanguageContext";
 import LanguageToggle from "@/components/shared/LanguageToggle";
+import ThemeToggle from "@/components/shared/ThemeToggle";
 import { supabase } from "@/services/supabase";
 import { LogOut, Shield, User as UserIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -119,6 +120,7 @@ const Header = () => {
         </div>
       </div>
       <div className="flex-1" />
+      <ThemeToggle />
       <LanguageToggle />
       {user && (
         <div className="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-full bg-muted/60 border border-border/60">

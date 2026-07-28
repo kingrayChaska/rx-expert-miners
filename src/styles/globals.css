@@ -47,11 +47,49 @@
   --color-sidebar-ring: hsl(var(--sidebar-ring));
 }
 
-/* Dark elegant is the ONLY theme — deep charcoal/graphite base, warm brass/gold
-   accent (kept from the original brand's orange-amber family, richened for a
-   premium dark feel), soft desaturated chart palette. Applied by default via
-   `.dark` on <html> in index.html — see main.tsx. */
-:root,
+:root {
+  --background: 0 0% 97%;
+  --foreground: 240 10% 10%;
+  --card: 0 0% 100%;
+  --card-foreground: 240 10% 10%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 10% 10%;
+  --primary: 38 92% 45%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 240 5% 92%;
+  --secondary-foreground: 240 10% 10%;
+  --muted: 240 5% 92%;
+  --muted-foreground: 240 5% 45%;
+  --accent: 38 80% 90%;
+  --accent-foreground: 38 80% 30%;
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 0 0% 100%;
+  --success: 152 55% 40%;
+  --success-foreground: 0 0% 100%;
+  --warning: 38 92% 45%;
+  --warning-foreground: 0 0% 100%;
+  --border: 240 5% 84%;
+  --input: 240 5% 84%;
+  --ring: 38 92% 45%;
+  --radius: 0.75rem;
+  --chart-1: 38 92% 50%;
+  --chart-2: 27 90% 52%;
+  --chart-3: 160 55% 40%;
+  --chart-4: 200 70% 48%;
+  --chart-5: 280 45% 55%;
+  --sidebar-background: 0 0% 95%;
+  --sidebar-foreground: 240 10% 10%;
+  --sidebar-primary: 38 92% 45%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 240 5% 90%;
+  --sidebar-accent-foreground: 240 10% 10%;
+  --sidebar-border: 240 5% 84%;
+  --sidebar-ring: 38 92% 45%;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Space Grotesk", sans-serif;
+  --font-arabic: "Cairo", sans-serif;
+}
+
 .dark {
   --background: 240 10% 6%;
   --foreground: 40 20% 96%;
